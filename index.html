@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/xo.png" />
+    <title>Game cờ caro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0b096d877.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <ion-icon class="icon icon-dark-light" name="sunny-outline"></ion-icon>
+    <ion-icon name="sunny"></ion-icon>
+    <div class="select-box">
+      <div class="header">
+        <h1 class="header-title">Game Cờ Caro</h1>
+        <img src="img/xo.png" class="image" alt="X/O image" />
+      </div>
+
+      <div class="content">
+        <div class="title">Bạn muốn chọn X hay O ?</div>
+        <div class="options">
+          <button class="playerX">X</button>
+          <button class="playerO">O</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Play board -->
+    <div class="play-box hidden">
+      <div class="set-board">
+        <div>
+          <!-- <label for="row">Row</label> -->
+          <input
+            type="text"
+            id="Row"
+            name="row"
+            placeholder="Row"
+            class="input input-row"
+            step="1"
+            required
+          />
+        </div>
+        <div>
+          <!-- <label for="">Column</label> -->
+          <input
+            type="text"
+            placeholder="Column"
+            class="input input-column"
+            step="1"
+            required
+          />
+        </div>
+        <button class="btn btn-play">Play</button>
+      </div>
+
+      <div class="players">
+        <span class="Xturn">X đánh</span>
+        <span class="Oturn">O đánh</span>
+      </div>
+
+      <div class="game-board"></div>
+    </div>
+
+    <!-- Result-box -->
+    <div class="result-box hidden">
+      <div class="won-text"></div>
+      <button class="btn-replay">Replay</button>
+    </div>
+
+    <!--  -->
+    <script src="script.js"></script>
+  </body>
+</html>
