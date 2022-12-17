@@ -1,0 +1,272 @@
+/**************************/
+/* COLORS */
+/* #56baed 
+/**************************/
+/* GENERALS */
+
+html {
+  font-size: 40%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #56baed;
+}
+
+.select-box,
+.play-box,
+.result-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+/**************************************/
+
+.select-box {
+  max-width: 40rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 11px;
+  padding: 1.8rem 2.4rem;
+  z-index: 3;
+}
+
+.select-box .header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px #ccc;
+}
+.select-box .header-title {
+  font-size: 2.8rem;
+}
+.select-box .title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+.select-box .image {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 8rem;
+}
+.select-box .options {
+  display: flex;
+  width: 100%;
+}
+.options button {
+  border: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #56baed;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.options .player-yes {
+  margin-right: 1.5rem;
+}
+
+.options .player-yes:hover,
+.option .player-yes:active {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+.options .player-no:hover,
+.option .player-no:active {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+/**************************************/
+/* Select box 2 */
+.options .playerX,
+.options .playerO {
+  border: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: #56baed;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.options .playerX {
+  margin-right: 1.5rem;
+}
+
+.options .playerX:hover,
+.option .playerX:active {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+.options .playerO:hover,
+.option .playerO:active {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+/************************************8*/
+/* Play box */
+
+.play-box {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.set-board {
+  width: 40rem;
+  display: flex;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  align-items: center;
+  gap: 2rem;
+}
+.set-board .input-row {
+  margin-left: 0.6rem;
+}
+.set-board label {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.set-board input {
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #56baed;
+  outline: none;
+  color: #fff;
+}
+.btn-play {
+  margin-left: 3rem;
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #56baed;
+  outline: none;
+  cursor: pointer;
+}
+.set-board .btn-play:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+/********************************/
+.players {
+  padding: 2.4rem 1.8rem;
+  background-color: #fff;
+  margin-top: 2rem;
+  font-size: 2rem;
+  border-radius: 11px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.players .active {
+  background-color: #56baed;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/************************************/
+.game-board {
+  max-width: 100vw;
+  margin-top: 6rem;
+  text-align: center;
+}
+.game-board table {
+  border-collapse: collapse;
+}
+
+.btn-box {
+  /* margin: 0.2rem; */
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #c2c2c2;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #56baed;
+  background-color: #fff;
+  cursor: pointer;
+}
+.game-board td:hover,
+.game-board td:active {
+  background-color: #eee;
+}
+/* Result box*/
+
+.result-box {
+  max-width: 50rem;
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+  align-items: center;
+}
+
+.result-box .won-text {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.result-box .btn-replay {
+  width: 12rem;
+  height: 6rem;
+  border: none;
+  align-self: center;
+  background-color: #56baed;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.result-box .btn-replay:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+.result-box .winner {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.result-box span {
+  font-size: 3rem;
+  font-weight: 600;
+}

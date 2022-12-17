@@ -1,0 +1,58 @@
+@media (max-width: 31rem) {
+  .select-box {
+    max-width: 28rem;
+    width: 100%;
+  }
+  .select-box .header {
+    padding-bottom: 1rem;
+  }
+  .select-box .header-title {
+    font-size: 2rem;
+  }
+  .select-box .title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem;
+  }
+  .select-box .image {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 3rem;
+  }
+  .result-box {
+    max-width: 36rem;
+  }
+  .result-box .won-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 25rem) {
+  .play-box .set-board {
+    width: 30em;
+    padding: 1rem 1rem;
+  }
+  .set-board input {
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+  .set-board .input-row {
+    margin-left: 0rem;
+  }
+  .btn-play {
+    margin-left: 1rem;
+  }
+  .play-box .players {
+    padding: 1.8rem 1.4rem;
+  }
+  .players .active {
+    padding: 0.6rem 1rem;
+  }
+  /* .game-board td {
+    margin: 0.2rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  } */
+}
